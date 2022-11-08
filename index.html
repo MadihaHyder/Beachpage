@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        *
+        {
+            padding: 0;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        .header
+        {
+            background:linear-gradient(180deg, midnightblue, rgb(66, 102, 221));
+            width: 100%;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .logo
+        {
+            margin-left: -100px;
+        }
+        .logo h2
+        {
+            color: white;
+        }
+        .nav_links ul
+        {
+            display: flex;
+            list-style-type: none;
+            gap: 50px;
+        }
+        .nav_links ul li a
+        { 
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            padding: 10px;
+        }
+        .nav_links li a:hover
+        {
+            border: solid 2px deepskyblue;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .fa-bars
+        {
+            display: none;
+        }
+        .hero
+        {
+            height: 100vh;
+        }
+        .hero .hero_img
+        {
+            background: url(images/landscape/beach.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 89%;
+        }
+        .hero_img .content
+        {
+            text-align:center;
+            padding-left:600px ;
+            padding-top: 100px ;
+        }
+        .hero_img .content h1
+        {
+            color: #024d36;
+            text-shadow: #fff 1px 0 23px; ;
+            font-size: 50px;
+            font-weight: bolder;
+        }
+        button
+        {
+            background: linear-gradient(130deg, yellow, red);
+            width: 200px;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            font-size: 20px;
+            color: white;
+            
+        }
+        button:hover
+        {
+            cursor: pointer;
+            box-shadow: 0 0 1px 2px rgba(255, 255, 255, 0.621);
+        }
+        @media screen and (max-width:500px)
+        {
+        .header
+        {
+            background-color:white;
+            width: 100%;
+            height: 80px;
+            display: block;
+            align-items: center;
+            justify-content: space-around;
+            position: relative;
+        }
+        .logo
+        {
+            margin-left: 0px;
+        }
+        .logo h2
+        {
+            padding-top: 25px;
+            padding-left: 10px;
+            font-size: 18px;
+        }
+        .nav_links ul
+        {
+            display: none;
+            list-style-type: none;
+            gap: 50px;
+            background-color: gainsboro;
+        }
+        .nav_links ul li a
+        { 
+            text-decoration: none;
+            font-size: 18px;
+            color: deepskyblue;
+            padding: 10px;
+        }
+        .fa-bars
+        {
+            display: block;
+            font-size: 20px;
+            position: absolute;
+            top:30px ;
+            right:18px ;
+        }
+        .fa-bars:hover ~.nav_links ul {
+            display: block;
+            background-color: gainsboro;
+            width: 150px;
+            margin-top: 5px;
+        }
+        .hero
+        {
+            height: 100vh;
+            width: 100%;
+        }
+        .hero .hero_img
+        {
+            background: url(images/landscape/beach.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100%;
+        }
+        .hero_img .content
+        {
+            text-align:center;
+            padding-left:20px;
+            
+        }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h2>company logo</h2>
+        </div>
+        <div class="nav_links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars"></i>
+    </header>
+    <div class="hero">
+        <div class="hero_img">
+            <div class="content">
+                <h1>Get our</h1>
+                <h1>speacial offer!</h1>
+                <button> learn more </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
